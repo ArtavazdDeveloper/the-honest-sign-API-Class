@@ -11,7 +11,7 @@ public class CrptApi {
 
      public CrptApi(TimeUnit timeUnit, int requestLimit){
         this.requestLimit = requestLimit;
-        this.intervalMillis = timeUnit.toMillis(1)
+        this.intervalMillis = timeUnit.toMillis(1);
      }
      public void createDocument(String documentJson, String signature){
         synchronized(lock){
